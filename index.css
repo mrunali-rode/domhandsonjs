@@ -1,0 +1,28 @@
+h4{
+    color: brown;
+}
+pre
+{
+    color: rgb(29, 32, 203);
+}
+#divbox
+{
+    
+    display: flex;
+    flex-direction: row;
+}
+.d
+{
+    background-color: rgb(0, 255, 110);
+    height: 150px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#btn{
+    height: 40px;
+    width: 200px;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: pink;
+}

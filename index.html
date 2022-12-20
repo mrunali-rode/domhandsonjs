@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Assesment</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h4>Que 1. Write the code to access element which is having id as "text".</h4>
+     <div id="div1">Ans: Hii..There i am using Whatsapp.</div>
+     <pre>     let c=document.getElementById("div1");
+             console.log(c.innerText);
+     </pre>
+    
+    <h4>Que 2. Write the code to access element which is having tag as "h1".</h4>
+    <h1>Ans: Welcome All</h1>
+    <pre>    let h=document.getElementsByTagName('h1');
+           console.log(h[0].innerText);</pre>
+
+    <h4> Que 3. Write the code to access element which is having class as "box"</h4>
+    <div class="box">Ans: I access by class name.</div>
+    <pre>     let a=document.getElementsByClassName("box");
+            console.log(a[0].innerText);</pre>
+    
+    <h4>Que 4."<h1 id="t1">Hello </h1>
+
+        Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</h4>
+    <pre>
+        Ans:
+        let helloElement=document.getElementById("t1");
+        console.log(helloElement.innerText="Hello world")
+    </pre>
+        <div id="clock">
+            <!-- <p id="hrs"></p><span>:</span>
+            <p id="min"></p><span>:</span>
+            <p id="sec"></p> -->
+
+        </div>
+        <h4>Que 5. Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at <br>
+             the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</h4>
+             <div id="divbox">
+                <div class="d">1</div>
+                <div class="d">2</div>
+                <div class="d">3</div>
+             </div>
+             <button id="btn">Change Flex direction</button>
+         <pre>
+            Ans:
+
+         </pre>  
+         <h4>Que 6. Whats the difference between window vs document?</h4> 
+         <pre>
+            Ans: <b>Windows :</b>
+            window is the main JavaScript object root, aka the global object in a browser, and it can also be treated as the root of the document object model. <br>
+            You can access it as window.window.screen or just screen is a small information object about physical screen dimensions.
+            window.document or just document is the main object of the potentially visible (or better yet: rendered) document object model/DOM.
+            Since window is the global object, you can reference any properties of it with just the property name - so you do not have to write down window.  br
+            - it will be figured out by the runtime.
+            <b>Document : </b>
+            Each window object has a document object to be rendered. These objects get confused in part because HTML elements are added to the global object <br>
+             when assigned a unique id. E.g., in the HTML snippet The document object is your html, aspx, php, or other document that will be loaded into the browser. <br>
+            The document actually gets loaded inside the window object and has properties available to it like title, URL, cookie, etc. What does this really mean? That <br>
+             means if you want to access a property for the window it is window.property, if it is document it is window.document.property which is also available in short as 
+             document.property.
+         </pre> 
+         <h4>Que 7. "<h1 id="heading">Hello </h1>Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 <br>
+             tag using DOM functions"</h4>
+
+          <pre>Ans: </pre>   
+    <script src="script.js"></script>
+</body>
+</html>
